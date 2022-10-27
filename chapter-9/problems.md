@@ -1,0 +1,3 @@
+1. A method is a function with a receiver argument. The receiver sits between the func keyword and the function name. `func (s *Square) area() float64 {}` is a functon with a receiver of type pointer to a Square, hence it's a method. While, `func area(s *Square) float64 {}` is just a regular function.
+2. We would use an embedded anonymous field over a normal named field when we have to represent an is-a relationship between a type and other types. e.g: to represent the relationship: a Cat is an Animal, we could do: `type Cat struct { Animal }`.
+3. See ./interfaces.go
