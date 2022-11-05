@@ -39,6 +39,10 @@ of the following function. (It'll show the comment before the function)
 
 // Finds the average of a series of numbers
 func Average(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0.0
+	}
+
 	total := float64(0)
 	for _, x := range xs {
 		total += x
@@ -48,6 +52,10 @@ func Average(xs []float64) float64 {
 
 // Finds the max value in a series of numbers
 func Max(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0
+	}
+
 	max := xs[0]
 
 	for _, x := range xs {
@@ -61,6 +69,10 @@ func Max(xs []float64) float64 {
 
 // Finds the min value in a series of numbers
 func Min(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0
+	}
+
 	min := xs[0]
 
 	for _, x := range xs {
