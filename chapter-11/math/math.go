@@ -5,8 +5,8 @@ embodied in the "Don't Repeat Yourself" principle.
 Functions are the first layer we turn to allow code reuse.
 Another mechanism Go provides for code reuse is packages.
 
-Go's standard distribution provides apackage named "math",
-however since Go's package can be hierarchical we are save to
+Go's standard distribution provides a package named "math",
+however since Go's package can be hierarchical we are safe to
 use the same name for our package. (The real `math` package is just `math`,
 ours is `golang-book/chapter-11/math`)
 
