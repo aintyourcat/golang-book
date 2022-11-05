@@ -22,5 +22,9 @@ It seems that the book is still using an older method.
 func main() {
 	xs := []float64{1, 2, 3, 4}
 	avg := math.Average(xs)
+	min := math.Min(xs)
+	max := math.Max(xs)
 	fmt.Println(avg)
+	fmt.Println(min)
+	fmt.Println(max)
 }

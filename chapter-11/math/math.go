@@ -25,12 +25,12 @@ other package (and programs) are able to see it.
 If we had named the following function `average` our `main` program
 wouldn't have been able to see it.
 
-It's a good practice to only expose the parts of our package that we want other 
+It's a good practice to only expose the parts of our package that we want other
 packages using and hide everything else.
 */
 
 /*
-Go has the ability to automatically generate documentation for packages we write 
+Go has the ability to automatically generate documentation for packages we write
 similiar way to the standard package documentation.
 
 Run: `GO111MODULE=auto go doc golang-book/chapter-11/math Average` to see the documentation
@@ -44,4 +44,30 @@ func Average(xs []float64) float64 {
 		total += x
 	}
 	return total / float64(len(xs))
+}
+
+// Finds the max value in a series of numbers
+func Max(xs []float64) float64 {
+	max := xs[0]
+
+	for _, x := range xs {
+		if x > max {
+			max = x
+		}
+	}
+
+	return max
+}
+
+// Finds the min value in a series of numbers
+func Min(xs []float64) float64 {
+	min := xs[0]
+
+	for _, x := range xs {
+		if x < min {
+			min = x
+		}
+	}
+
+	return min
 }
