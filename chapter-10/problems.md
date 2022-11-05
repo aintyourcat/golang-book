@@ -1,0 +1,3 @@
+1. To specify the direction of a channel we use the `<-` operator beside the `chan` keyword when declaring a channel. for example, `var c <-chan int` means `c` is a receive-only channel, meanwhile `var c chan<- int` imply that `c` is a sent-only channel.
+2. See ./problems.md
+3. A buffered channel is a type of channel that doesn't block, which means that it doesn't wait for the other side to be ready when attempting to send or receive a message. Sends to a buffered channel block when the buffer is full. Receives block when the buffer is empty. To create a buffered channel with a capacity of 20, pass 20 as the 2nd argument of the `make()` function when creating the channel.
