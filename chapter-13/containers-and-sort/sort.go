@@ -14,7 +14,7 @@ type Person struct {
 	To define our own sort we create a new type (`ByName`) and
 	make it equivalent to a slice of what we want to sort.
 
-	The `Sort` function of the `sort` package takes a sort.Interface and sorts it.
+	The `Sort` function of the `sort` package takes a `sort.Interface` and sorts it.
 
 	We then implement the 3 methods of that interface to our sort.
 */
