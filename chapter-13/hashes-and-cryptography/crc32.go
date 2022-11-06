@@ -10,7 +10,7 @@ non-cryptographic.
 The latter can be found underneath the `hash` package and include `adler32`,
 `crc32`, `crc64`, `fnv`.
 
-This program is the example of using the first one.
+This program is the example of using the second one.
 */
 
 package main
