@@ -1,0 +1,1 @@
+This repo contains programs and notes i wrote while reading the [An Introduction to Programming in Go](https://www.golang-book.com/books/intro) book.
