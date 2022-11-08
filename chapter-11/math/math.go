@@ -13,11 +13,13 @@ ours is `golang-book/chapter-11/math`)
 Package names match the folders they fall in.
 (There's way around this, but it's a lot easier if we stay with this pattern)
 
-When we import this package we use the full name, but inside this file
+When we import this package we use the full name a.k.a import path, but inside this file
 we only use the last part of the name. We also use the short name (`math`)
 when we reference functions from our package.
+
+import path is a string that uniquely identifies a package.
 */
-package math
+package math // This package is a library
 
 /*
 In Go if something starts with a capital letter that means

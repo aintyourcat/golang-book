@@ -7,6 +7,7 @@ import "testing"
 /*
 We could run the test with the `go test` command.
 That command will look for any tests in any of the files in current folder and run them.
+We write a test by creating a file with a name ending in `_test.go`.
 Tests are identified with the word `Test` and taking one argument of type `*testing.T`.
 For example, since we're testing the `Average` function we name the test function `TestAverage`.
 
